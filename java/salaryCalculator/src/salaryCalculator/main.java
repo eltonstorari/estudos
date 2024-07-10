@@ -11,20 +11,20 @@ public class main {
         // Teste da função salaryMultiplier()
         int daysSkipped = 15;
         double salaryMultiplier = calculator.salaryMultiplier(daysSkipped);
-        System.out.println("Salary Multiplier: " + salaryMultiplier);
+        System.out.println("Salário Multiplicado: " + salaryMultiplier);
 
         // Teste da função bonusMultiplier()
         int productsSold = 15;
         int bonusMultiplier = calculator.bonusMultiplier(productsSold);
-        System.out.println("Bonus Multiplier: " + bonusMultiplier);
+        System.out.println("Bonus Multiplicado: " + bonusMultiplier);
 
         // Teste da função bonusForProductsSold()
         double bonus = calculator.bonusForProductsSold(productsSold);
-        System.out.println("Bonus for Products Sold: " + bonus);
+        System.out.println("Bonus por Produtos vendidos: " + bonus);
 
         // Teste da função finalSalary()
         double finalSalary = calculator.finalSalary(daysSkipped, productsSold);
-        System.out.println("Final Salary: " + finalSalary);
+        System.out.println("Salário Final: " + finalSalary);
 	}
 	
 
