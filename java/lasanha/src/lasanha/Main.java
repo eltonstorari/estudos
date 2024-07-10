@@ -18,6 +18,10 @@ public class Main {
 		// Paramentro de entrada 20 camadas e 40 minutos de forno que retorna o tempo total gasto cozinhando a lasanha
 		System.out.println("Total de tempo trabalhado para cozinhar a lasanha: " + lasagna.totalTimeInMinutes(20, 40) + "Minutos");
 		
+		// Instancia de calculos que o projeto inicialmente pede
+		int sum = new Calculator().add(1, 2);
+		System.out.println("Calculo -> " + sum);
+		
 	}
 	
 	
@@ -40,5 +44,11 @@ public class Main {
             return  n + nMinutosNoForno;
         }
 	}
+	
+	public static class  Calculator {
+        public int add(int x, int y) {
+        return x + y;
+    }
+}
 
 }
