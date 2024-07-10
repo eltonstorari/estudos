@@ -15,6 +15,9 @@ public class Main {
 		// paramento de entrada e quantas camadas é preciso para fazer a lasanha e retorna o tempo de preparo 20 * 2 = 40 min
 		System.out.println("A lasanha ficará pronta em: " + lasagna.preparationTimeInMinutes(20));
 		
+		// Paramentro de entrada 20 camadas e 40 minutos de forno que retorna o tempo total gasto cozinhando a lasanha
+		System.out.println("Total de tempo trabalhado para cozinhar a lasanha: " + lasagna.totalTimeInMinutes(20, 40) + "Minutos");
+		
 	}
 	
 	
@@ -30,6 +33,11 @@ public class Main {
         
         public int preparationTimeInMinutes(int qtdeCamadas){
             return qtdeCamadas * 2;
+        }
+        
+        public int totalTimeInMinutes(int nCamadasAdd, int nMinutosNoForno){
+            int n = preparationTimeInMinutes(nCamadasAdd);
+            return  n + nMinutosNoForno;
         }
 	}
 
