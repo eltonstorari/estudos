@@ -7,4 +7,14 @@ public class Main {
 
 	}
 
+	public static class ElonsToyCar {
+		
+	    public static ElonsToyCar buy() {
+	        ElonsToyCar car = new ElonsToyCar();
+	        return car;
+	    }
+		
+	}
+
+
 }
