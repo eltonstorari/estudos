@@ -37,7 +37,7 @@ public class Main {
 	    }
 	    
 	    public void drive() { // Drive
-	        if( battery <= 0 ){
+	        if( battery <= 0 ){ // Evitar o carro ande com a bateria vazia
 	            
 	        }else {
 	            distance = distance + 20;
