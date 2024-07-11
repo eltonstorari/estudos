@@ -43,7 +43,7 @@ public class Main {
 	            distance = distance + 20;
 	        }
 	        
-	        battery = battery - 1;
+	        battery = battery - 1; //Atualizar a bateria ao dirigir
 	        ElonsToyCar car = ElonsToyCar.buy();
 	        
 	        car.distanceDisplay();
