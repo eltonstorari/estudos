@@ -8,7 +8,7 @@ public class Main {
 		
 		System.out.println(elonsToyCar.distanceDisplay());
 		System.out.println(elonsToyCar.batteryDisplay());
-
+		
 	}
 
 	public static class ElonsToyCar {
@@ -34,6 +34,21 @@ public class Main {
 	            texto = "Battery at " + battery + "%";
 	        }
 	        return texto;
+	    }
+	    
+	    public void drive() { // Drive
+	        if( battery <= 0 ){
+	            
+	        }else {
+	            distance = distance + 20;
+	        }
+	        
+	        battery = battery - 1;
+	        ElonsToyCar car = ElonsToyCar.buy();
+	        
+	        car.distanceDisplay();
+	        car.batteryDisplay();
+	        
 	    }
 		
 	}
